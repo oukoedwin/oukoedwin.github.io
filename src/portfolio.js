@@ -23,7 +23,7 @@ const greeting = {
   username: "Edwin O. Ouko",
   title: "Hi all, I'm Edwin",
   subTitle: emoji(
-    "A passionate Full Stack Software Developer 🚀 having experience in designing machine learning models, building Web and Mobile applications, digital design using FPGAs, IoT systems."
+    "A passionate engineer with experience in designing machine learning models, building Web and Mobile applications, designing digital systems using FPGAs, and working with IoT systems"
   ),
   resumeLink:
     "https://drive.google.com/file/d/1m2tdqKELSCyqIfyqhTcSgvAP71WR6M-5/view?usp=sharing", // Set to empty to hide the button
@@ -63,16 +63,16 @@ https://fontawesome.com/icons?d=gallery */
   softwareSkills: [
     {
       skillName: "Python",
-      fontAwesomeClassname: "fab fa-html5"
+      fontAwesomeClassname: "fab fa-python"
     },
     {
       skillName: "C/C++",
       fontAwesomeClassname: "fab fa-css3-alt"
     },
-    {
-      skillName: "JavaScript",
-      fontAwesomeClassname: "fab fa-sass"
-    },
+    // {
+    //   skillName: "JavaScript",
+    //   fontAwesomeClassname: "fab fa-sass"
+    // },
     {
       skillName: "JavaScript",
       fontAwesomeClassname: "fab fa-js"
@@ -85,34 +85,38 @@ https://fontawesome.com/icons?d=gallery */
       skillName: "nodejs",
       fontAwesomeClassname: "fab fa-node"
     },
-    {
-      skillName: "swift",
-      fontAwesomeClassname: "fab fa-swift"
-    },
-    {
-      skillName: "npm",
-      fontAwesomeClassname: "fab fa-npm"
-    },
+    // {
+    //   skillName: "swift",
+    //   fontAwesomeClassname: "fab fa-swift"
+    // },
+    // {
+    //   skillName: "npm",
+    //   fontAwesomeClassname: "fab fa-npm"
+    // },
     {
       skillName: "SQL",
       fontAwesomeClassname: "fas fa-database"
     },
-    {
-      skillName: "aws",
-      fontAwesomeClassname: "fab fa-aws"
-    },
+    // {
+    //   skillName: "aws",
+    //   fontAwesomeClassname: "fab fa-aws"
+    // },
     {
       skillName: "Linux",
-      fontAwesomeClassname: "fas fa-fire"
+      fontAwesomeClassname: "fab fa-linux"
     },
     {
       skillName: "Python",
       fontAwesomeClassname: "fab fa-python"
     },
     {
-      skillName: "Docker and Kubernetes",
+      skillName: "Docker",
       fontAwesomeClassname: "fab fa-docker"
     }
+    // {
+    //   skillName: "Kubernetes",
+    //   fontAwesomeClassname: "fab fa-docker"
+    // }
   ],
   display: true // Set false to hide this section, defaults to true
 };
@@ -124,7 +128,7 @@ const educationInfo = {
   schools: [
     {
       schoolName: "Massachusetts Institute of Technology",
-      logo: require("./assets/images/harvardLogo.png"),
+      logo: require("./assets/images/mit_logo_std_rgb_bright-red.png"),
       subHeader: "Master of Engineering in Electrical Engineering and Computer Science",
       duration: "September 2024 - May 2025",
       desc: "Participated in the research of XXX and published 3 papers.",
@@ -135,10 +139,10 @@ const educationInfo = {
     },
     {
       schoolName: "Massachusetts Institute of Technology",
-      logo: require("./assets/images/stanfordLogo.png"),
+      logo: require("./assets/images/mit_logo_std_rgb_bright-red.png"),
       subHeader: "Bachelor of Science in Electrical Engineering and  Computer Science",
       duration: "September 2020 - May 2024",
-      desc: "Ranked top 10% in the program. Took courses about Software Engineering, Web Security, Operating Systems, ...",
+      desc: "Took courses in Software Construction, Computer Security, Operating Systems, Digital Design, Circuits, Machine Learning, and Economics",
       descBullets: ["Lorem ipsum dolor sit amet, consectetur adipiscing elit"]
     }
   ]
@@ -171,10 +175,10 @@ const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
   experience: [
     {
-      role: "Software Engineer",
-      company: "Facebook",
+      role: "Software Engineer Intern",
+      company: "Microsoft",
       companylogo: require("./assets/images/facebookLogo.png"),
-      date: "June 2018 – Present",
+      date: "June 2023 – August 2023",
       desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       descBullets: [
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
@@ -182,19 +186,20 @@ const workExperiences = {
       ]
     },
     {
-      role: "Front-End Developer",
-      company: "Quora",
-      companylogo: require("./assets/images/quoraLogo.png"),
-      date: "May 2017 – May 2018",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    },
-    {
       role: "Software Engineer Intern",
-      company: "Airbnb",
-      companylogo: require("./assets/images/airbnbLogo.png"),
-      date: "Jan 2015 – Sep 2015",
+      company: "Microsoft",
+      companylogo: require("./assets/images/quoraLogo.png"),
+      date: "June 2022 – August 2022",
       desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
     }
+    // ,
+    // {
+    //   role: "Software Engineer Intern",
+    //   company: "Airbnb",
+    //   companylogo: require("./assets/images/airbnbLogo.png"),
+    //   date: "Jan 2015 – Sep 2015",
+    //   desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    // }
   ]
 };
 
@@ -321,7 +326,7 @@ const blogSection = {
         "React is a JavaScript library for building User Interface. It is maintained by Facebook and a community of individual developers and companies."
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Talks Sections
@@ -340,7 +345,7 @@ const talkSection = {
       event_url: "https://www.facebook.com/events/2339906106275053/"
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Podcast Section
@@ -353,7 +358,7 @@ const podcastSection = {
   podcast: [
     "https://anchor.fm/codevcast/embed/episodes/DevStory---Saad-Pasta-from-Karachi--Pakistan-e9givv/a-a15itvo"
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 const contactInfo = {
@@ -361,13 +366,13 @@ const contactInfo = {
   subtitle:
     "Discuss a project or just want to say hi? My Inbox is open for all.",
   number: "+92-0000000000",
-  email_address: "saadpasta70@gmail.com"
+  email_address: "edwinouko4@gmail.com"
 };
 
 // Twitter Section
 
 const twitterDetails = {
-  userName: "twitter", //Replace "twitter" with your twitter username without @
+  userName: "oukoed", //Replace "twitter" with your twitter username without @
   display: true // Set true to display this section, defaults to false
 };
 
