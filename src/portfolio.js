@@ -69,10 +69,6 @@ https://fontawesome.com/icons?d=gallery */
       skillName: "C/C++",
       fontAwesomeClassname: "fab fa-css3-alt"
     },
-    // {
-    //   skillName: "JavaScript",
-    //   fontAwesomeClassname: "fab fa-sass"
-    // },
     {
       skillName: "JavaScript",
       fontAwesomeClassname: "fab fa-js"
@@ -85,22 +81,10 @@ https://fontawesome.com/icons?d=gallery */
       skillName: "nodejs",
       fontAwesomeClassname: "fab fa-node"
     },
-    // {
-    //   skillName: "swift",
-    //   fontAwesomeClassname: "fab fa-swift"
-    // },
-    // {
-    //   skillName: "npm",
-    //   fontAwesomeClassname: "fab fa-npm"
-    // },
     {
       skillName: "SQL",
       fontAwesomeClassname: "fas fa-database"
     },
-    // {
-    //   skillName: "aws",
-    //   fontAwesomeClassname: "fab fa-aws"
-    // },
     {
       skillName: "Linux",
       fontAwesomeClassname: "fab fa-linux"
@@ -113,10 +97,6 @@ https://fontawesome.com/icons?d=gallery */
       skillName: "Docker",
       fontAwesomeClassname: "fab fa-docker"
     }
-    // {
-    //   skillName: "Kubernetes",
-    //   fontAwesomeClassname: "fab fa-docker"
-    // }
   ],
   display: true // Set false to hide this section, defaults to true
 };
@@ -214,7 +194,7 @@ const openSource = {
 // Some big projects you have worked on
 
 const bigProjects = {
-  title: "Big Projects",
+  title: "Projects",
   subtitle: "SOME STARTUPS AND COMPANIES THAT I HELPED TO CREATE THEIR TECH",
   projects: [
     {
@@ -302,7 +282,7 @@ const achievementSection = {
       ]
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Blogs Section
@@ -373,7 +353,7 @@ const contactInfo = {
 
 const twitterDetails = {
   userName: "oukoed", //Replace "twitter" with your twitter username without @
-  display: true // Set true to display this section, defaults to false
+  display: false // Set true to display this section, defaults to false
 };
 
 const isHireable = false; // Set false if you are not looking for a job. Also isHireable will be display as Open for opportunities: Yes/No in the GitHub footer
