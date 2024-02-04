@@ -168,8 +168,9 @@ const workExperiences = {
       companylogo: require("./assets/images/facebookLogo.png"),
       date: "June 2023 – August 2023",
       desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      desc:
+      descBullets: [
         "Implemented proof-of-concept inplace OS upgrade of nodes in hybrid Kubernetes clusters using Cluster API"
+      ]
       
     },
     {
@@ -198,8 +199,8 @@ const workExperiences = {
 To know how to get github key look at readme.md */
 
 const openSource = {
-  showGithubProfile: "true", // Set true or false to show Contact profile using Github, defaults to true
-  display: true // Set false to hide this section, defaults to true
+  showGithubProfile: "false", // Set true or false to show Contact profile using Github, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Some big projects you have worked on
@@ -232,7 +233,7 @@ const bigProjects = {
       ]
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false  // Set false to hide this section, defaults to true
 };
 
 // Achievement Section
@@ -364,10 +365,10 @@ const contactInfo = {
 
 const twitterDetails = {
   userName: "oukoed", //Replace "twitter" with your twitter username without @
-  display: false // Set true to display this section, defaults to false
+  display: true // Set true to display this section, defaults to false
 };
 
-const isHireable = false; // Set false if you are not looking for a job. Also isHireable will be display as Open for opportunities: Yes/No in the GitHub footer
+const isHireable = Yes; // Set false if you are not looking for a job. Also isHireable will be display as Open for opportunities: Yes/No in the GitHub footer
 
 export {
   illustration,
