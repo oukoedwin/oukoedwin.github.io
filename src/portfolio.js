@@ -23,7 +23,7 @@ const greeting = {
   username: "Edwin O. Ouko",
   title: "Hi all, I'm Edwin",
   subTitle: emoji(
-    "A passionate engineer with experience in designing machine learning models, building Web and Mobile applications, designing digital systems using FPGAs, and working with IoT systems"
+    "A passionate engineer with experience in designing machine learning models, building Web and Mobile applications, designing digital systems, and working with IoT systems"
   ),
   resumeLink:
     "https://drive.google.com/file/d/1m2tdqKELSCyqIfyqhTcSgvAP71WR6M-5/view?usp=sharing", // Set to empty to hide the button
@@ -46,14 +46,14 @@ const socialMediaLinks = {
 
 const skillsSection = {
   title: "What I do",
-  subTitle: "CRAZY FULL STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK",
+  subTitle: "Embedded Systems and Machine Learning Engineer",
   skills: [
     emoji(
-      "⚡ Develop highly interactive Front end / User Interfaces for your web and mobile applications"
+      "⚡ Designing and Building IoT Applications"
     ),
-    emoji("⚡ Progressive Web Applications ( PWA ) in normal and SPA Stacks"),
+    emoji("⚡ Designing and Prototyping Hardware Accelerators on FPGAs"),
     emoji(
-      "⚡ Integration of third party services such as Firebase/ AWS / Digital Ocean"
+      "⚡ Building, Training, and Deploying Machine Learning Models"
     )
   ],
 
@@ -111,10 +111,11 @@ const educationInfo = {
       logo: require("./assets/images/mit_logo_std_rgb_bright-red.png"),
       subHeader: "Master of Engineering in Electrical Engineering and Computer Science",
       duration: "September 2024 - May 2025",
-      desc: "Participated in the research of XXX and published 3 papers.",
+      desc: "In Progress...",
       descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+        "Reinforcement Learning",
+        "Unsupervised Learning",
+        "Natural Language Processing"
       ]
     },
     {
@@ -122,8 +123,14 @@ const educationInfo = {
       logo: require("./assets/images/mit_logo_std_rgb_bright-red.png"),
       subHeader: "Bachelor of Science in Electrical Engineering and  Computer Science",
       duration: "September 2020 - May 2024",
-      desc: "Took courses in Software Construction, Computer Security, Operating Systems, Digital Design, Circuits, Machine Learning, and Economics",
-      descBullets: ["Lorem ipsum dolor sit amet, consectetur adipiscing elit"]
+      desc: "Took courses in Software Construction, Computer Security, Operating Systems, Digital Design, Machine Learning",
+      descBullets: [
+          "Sofware Design",
+          "FPGAs",
+          "Computer Security",
+          "Distributed Systems",
+          "Machine Learning"
+      ]
     }
   ]
 };
@@ -160,17 +167,20 @@ const workExperiences = {
       companylogo: require("./assets/images/facebookLogo.png"),
       date: "June 2023 – August 2023",
       desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
-      ]
+      desc:
+        "Implemented proof-of-concept inplace OS upgrade of nodes in hybrid Kubernetes clusters using Cluster API"
+      
     },
     {
       role: "Software Engineer Intern",
       company: "Microsoft",
       companylogo: require("./assets/images/quoraLogo.png"),
       date: "June 2022 – August 2022",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      descBullets: [
+        "Developed and tested Wi-Fi access point and station modes on Azure Sphere embedded device",
+        "Troubleshooted and fixed networking bugs on Azure Sphere device",
+        "Designed and built a web interface for setting up Wi-Fi on Azure Sphere device in zero-conf scenario"
+     ]
     }
     // ,
     // {
@@ -314,7 +324,7 @@ const blogSection = {
 const talkSection = {
   title: "TALKS",
   subtitle: emoji(
-    "I LOVE TO SHARE MY LIMITED KNOWLEDGE AND GET A SPEAKER BADGE 😅"
+    "I LOVE TO SHARE MY LIMITED KNOWLEDGE IN PROGRAMMING, MACHINE LEARNING, AND IOT"
   ),
 
   talks: [
@@ -332,7 +342,7 @@ const talkSection = {
 
 const podcastSection = {
   title: emoji("Podcast 🎙️"),
-  subtitle: "I LOVE TO TALK ABOUT MYSELF AND TECHNOLOGY",
+  subtitle: "I LOVE TO TALK ABOUT TECHNOLOGY, ENTREPRENEURSHIP, AND EDUCATION",
 
   // Please Provide with Your Podcast embeded Link
   podcast: [
@@ -345,7 +355,7 @@ const contactInfo = {
   title: emoji("Contact Me ☎️"),
   subtitle:
     "Discuss a project or just want to say hi? My Inbox is open for all.",
-  number: "+92-0000000000",
+  number: "+1(781)-469-2076",
   email_address: "edwinouko4@gmail.com"
 };
 
