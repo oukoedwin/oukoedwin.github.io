@@ -161,15 +161,15 @@ const techStack = {
 
 const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
-  experience: [
-    {
+  experience: [{
       role: "Software Engineer Intern",
       company: "Microsoft",
       companylogo: require("./assets/images/facebookLogo.png"),
       date: "June 2023 – August 2023",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       descBullets: [
-        "Implemented proof-of-concept inplace OS upgrade of nodes in hybrid Kubernetes clusters using Cluster API"
+        "Implemented Kubernetes operators in Golang for inplace OS upgrade of nodes in hybrid Kubernetes clusters",
+        "Implemented a daemon that interfaces the Kubernetes operator and SWUpdate tool for OS upgrade",
+        "Repartitioned Mariner Linux OS image to allow A/B update using the daemon and the Kubernetes operator above"
       ]
       
     },
