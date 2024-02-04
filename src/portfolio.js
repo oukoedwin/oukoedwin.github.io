@@ -111,7 +111,7 @@ const educationInfo = {
       logo: require("./assets/images/mit_logo_std_rgb_bright-red.png"),
       subHeader: "Master of Engineering in Electrical Engineering and Computer Science",
       duration: "September 2024 - May 2025",
-      desc: "In Progress...",
+      desc: "Focus:",
       descBullets: [
         "Reinforcement Learning",
         "Unsupervised Learning",
@@ -123,13 +123,14 @@ const educationInfo = {
       logo: require("./assets/images/mit_logo_std_rgb_bright-red.png"),
       subHeader: "Bachelor of Science in Electrical Engineering and  Computer Science",
       duration: "September 2020 - May 2024",
-      desc: "Took courses in Software Construction, Computer Security, Operating Systems, Digital Design, Machine Learning",
+      desc: "Key Courses Taken:",
       descBullets: [
           "Sofware Design",
           "FPGAs",
           "Computer Security",
           "Distributed Systems",
-          "Machine Learning"
+          "Machine Learning",
+          "Operating System"
       ]
     }
   ]
@@ -142,15 +143,15 @@ const techStack = {
   experience: [
     {
       Stack: "Frontend/Design", //Insert stack or technology you have experience in
-      progressPercentage: "90%" //Insert relative proficiency in percentage
+      progressPercentage: "80%" //Insert relative proficiency in percentage
     },
     {
       Stack: "Backend",
-      progressPercentage: "70%"
+      progressPercentage: "90%"
     },
     {
       Stack: "Programming",
-      progressPercentage: "60%"
+      progressPercentage: "80%"
     }
   ],
   displayCodersrank: false // Set true to display codersrank badges section need to changes your username in src/containers/skillProgress/skillProgress.js:17:62, defaults to false
@@ -355,7 +356,7 @@ const contactInfo = {
   title: emoji("Contact Me ☎️"),
   subtitle:
     "Discuss a project or just want to say hi? My Inbox is open for all.",
-  number: "+1(781)-469-2076",
+  number: "+1-(781)-469-2076",
   email_address: "edwinouko4@gmail.com"
 };
 
