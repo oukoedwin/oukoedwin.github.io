@@ -23,7 +23,7 @@ const greeting = {
   username: "Edwin O. Ouko",
   title: "Hi all, I'm Edwin",
   subTitle: emoji(
-    "A passionate engineer with experience in designing machine learning models, building Web and Mobile applications, designing digital systems, and working with IoT systems"
+    "A passionate engineer with experience in building and deploying machine learning models, building Web and Mobile applications, designing digital systems, and working with IoT systems"
   ),
   resumeLink:
     "https://drive.google.com/file/d/1m2tdqKELSCyqIfyqhTcSgvAP71WR6M-5/view?usp=sharing", // Set to empty to hide the button
