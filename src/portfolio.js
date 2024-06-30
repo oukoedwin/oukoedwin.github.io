@@ -21,9 +21,9 @@ const illustration = {
 
 const greeting = {
   username: "Edwin O. Ouko",
-  title: "Hi all, I'm Edwin",
+  title: "Hi there, I'm Edwin",
   subTitle: emoji(
-    "A passionate engineer with experience in building and deploying machine learning models, building Web and Mobile applications, designing digital systems, and working with IoT systems"
+    "I am a passionate engineer with a proven track record in developing and deploying machine learning systems. My expertise extends to building dynamic web and mobile applications, as well as integrating and working with IoT systems. I thrive on solving complex problems and leveraging cutting-edge technology to create innovative solutions."
   ),
   resumeLink:
     "https://drive.google.com/file/d/1m2tdqKELSCyqIfyqhTcSgvAP71WR6M-5/view?usp=sharing", // Set to empty to hide the button
@@ -114,7 +114,6 @@ const educationInfo = {
       desc: "Focus:",
       descBullets: [
         "Reinforcement Learning",
-        "Unsupervised Learning",
         "Natural Language Processing"
       ]
     },
@@ -161,22 +160,32 @@ const techStack = {
 
 const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
-  experience: [{
+  experience: [
+    
+    {
       role: "Software Engineer Intern",
       company: "Microsoft",
-      companylogo: require("./assets/images/facebookLogo.png"),
+      companylogo: require("./assets/images/microsoftLogo.svg"),
+      date: "June 2024 – August 2024",
+      descBullets: [
+        "Designed and developed a downloadSDK to streamline the process of downloading VM images in air-gapped on-premise clouds"
+     ]
+    },
+    {
+      role: "Software Engineer Intern",
+      company: "Microsoft",
+      companylogo: require("./assets/images/microsoftLogo.svg"),
       date: "June 2023 – August 2023",
       descBullets: [
         "Implemented Kubernetes operators in Golang for inplace OS upgrade of nodes in hybrid Kubernetes clusters",
         "Implemented a daemon that interfaces the Kubernetes operator and SWUpdate tool for OS upgrade",
         "Repartitioned Mariner Linux OS image to allow A/B update using the daemon and the Kubernetes operator above"
       ]
-      
     },
     {
       role: "Software Engineer Intern",
       company: "Microsoft",
-      companylogo: require("./assets/images/quoraLogo.png"),
+      companylogo: require("./assets/images/microsoftLogo.svg"),
       date: "June 2022 – August 2022",
       descBullets: [
         "Developed and tested Wi-Fi access point and station modes on Azure Sphere embedded device",
@@ -236,66 +245,6 @@ const bigProjects = {
   display: false  // Set false to hide this section, defaults to true
 };
 
-// Achievement Section
-// Include certificates, talks etc
-
-const achievementSection = {
-  title: emoji("Achievements And Certifications 🏆 "),
-  subtitle:
-    "Achievements, Certifications, Award Letters and Some Cool Stuff that I have done !",
-
-  achievementsCards: [
-    {
-      title: "Google Code-In Finalist",
-      subtitle:
-        "First Pakistani to be selected as Google Code-in Finalist from 4000 students from 77 different countries.",
-      image: require("./assets/images/codeInLogo.webp"),
-      imageAlt: "Google Code-In Logo",
-      footerLink: [
-        {
-          name: "Certification",
-          url: "https://drive.google.com/file/d/0B7kazrtMwm5dYkVvNjdNWjNybWJrbndFSHpNY2NFV1p4YmU0/view?usp=sharing"
-        },
-        {
-          name: "Award Letter",
-          url: "https://drive.google.com/file/d/0B7kazrtMwm5dekxBTW5hQkg2WXUyR3QzQmR0VERiLXlGRVdF/view?usp=sharing"
-        },
-        {
-          name: "Google Code-in Blog",
-          url: "https://opensource.googleblog.com/2019/01/google-code-in-2018-winners.html"
-        }
-      ]
-    },
-    {
-      title: "Google Assistant Action",
-      subtitle:
-        "Developed a Google Assistant Action JavaScript Guru that is available on 2 Billion devices world wide.",
-      image: require("./assets/images/googleAssistantLogo.webp"),
-      imageAlt: "Google Assistant Action Logo",
-      footerLink: [
-        {
-          name: "View Google Assistant Action",
-          url: "https://assistant.google.com/services/a/uid/000000100ee688ee?hl=en"
-        }
-      ]
-    },
-
-    {
-      title: "PWA Web App Developer",
-      subtitle: "Completed Certifcation from SMIT for PWA Web App Development",
-      image: require("./assets/images/pwaLogo.webp"),
-      imageAlt: "PWA Logo",
-      footerLink: [
-        {name: "Certification", url: ""},
-        {
-          name: "Final Project",
-          url: "https://pakistan-olx-1.firebaseapp.com/"
-        }
-      ]
-    }
-  ],
-  display: false // Set false to hide this section, defaults to true
-};
 
 // Blogs Section
 
@@ -321,7 +270,7 @@ const blogSection = {
   display: false // Set false to hide this section, defaults to true
 };
 
-// Talks Sections
+// Talks Sections, change it to Publications
 
 const talkSection = {
   title: "TALKS",
@@ -340,25 +289,11 @@ const talkSection = {
   display: false // Set false to hide this section, defaults to true
 };
 
-// Podcast Section
-
-const podcastSection = {
-  title: emoji("Podcast 🎙️"),
-  subtitle: "I LOVE TO TALK ABOUT TECHNOLOGY, ENTREPRENEURSHIP, AND EDUCATION",
-
-  // Please Provide with Your Podcast embeded Link
-  podcast: [
-    "https://anchor.fm/codevcast/embed/episodes/DevStory---Saad-Pasta-from-Karachi--Pakistan-e9givv/a-a15itvo"
-  ],
-  display: false // Set false to hide this section, defaults to true
-};
-
 const contactInfo = {
-  title: emoji("Contact Me ☎️"),
+  title: emoji("Contact Me),
   subtitle:
     "Discuss a project or just want to say hi? My Inbox is open for all.",
-  number: "+1-(781)-469-2076",
-  email_address: "edwinouko4@gmail.com"
+  email_address: "edwinouko4 at gmail dot com"
 };
 
 // Twitter Section
