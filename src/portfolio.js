@@ -290,7 +290,7 @@ const talkSection = {
 };
 
 const contactInfo = {
-  title: emoji("Contact Me),
+  title: emoji("Contact Me"),
   subtitle:
     "Discuss a project or just want to say hi? My Inbox is open for all.",
   email_address: "edwinouko4 at gmail dot com"
