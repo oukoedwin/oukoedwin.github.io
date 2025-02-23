@@ -13,7 +13,7 @@ body {
     background-color: #f4f4f4;
     color: #333;
     line-height: 1.6;
-    padding-top: 70px; /* To prevent content from being hidden under fixed navbar */
+    padding-top: 70px; /* Prevent content from being hidden under fixed navbar */
 }
 
 /* Navigation Bar */
@@ -21,14 +21,16 @@ nav {
     background-color: #222;
     color: white;
     position: fixed;
-    width: 100%;
+    width: 80%;  /* Makes the navbar narrower */
     top: 0;
-    left: 0;
-    padding: 15px 0;
+    left: 50%;
+    transform: translateX(-50%); /* Centers the navbar */
+    padding: 12px 0;
     display: flex;
     justify-content: center;
     box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
     z-index: 1000;
+    border-radius: 8px; /* Adds slight rounding for a modern look */
 }
 
 nav ul {
@@ -38,14 +40,14 @@ nav ul {
 }
 
 nav ul li {
-    margin: 0 20px;
+    margin: 0 15px; /* Reduces spacing to fit the narrower bar */
 }
 
 nav ul li a {
     color: white;
     text-decoration: none;
     font-weight: 500;
-    font-size: 1rem;
+    font-size: 0.95rem; /* Slightly smaller font for a compact look */
     transition: color 0.3s ease-in-out;
 }
 
@@ -94,10 +96,21 @@ h2 {
     background: #0056b3;
 }
 
-/* Experience & Projects Styling */
+/* EXPERIENCE & PROJECTS STYLING */
 ul {
     list-style: none;
     padding-left: 0;
+}
+
+/* HIDE NESTED LISTS INITIALLY */
+ul ul {
+    display: none;
+    padding-left: 20px;
+}
+
+/* REVEAL NESTED LIST ON PARENT CLICK */
+ul li:has(ul):hover > ul {
+    display: block;
 }
 
 ul li {
@@ -106,6 +119,21 @@ ul li {
     border-left: 5px solid #00bcd4;
     margin-bottom: 15px;
     border-radius: 5px;
+    cursor: pointer; /* Indicates clickable behavior */
+    position: relative;
+}
+
+/* ADD A LITTLE ICON FOR DROPDOWN EFFECT */
+ul li:has(ul)::after {
+    content: " ▼"; /* Downward arrow */
+    font-size: 0.8rem;
+    color: #666;
+    position: absolute;
+    right: 10px;
+}
+
+ul li:hover::after {
+    content: " ▲"; /* Upward arrow on hover */
 }
 
 /* Contact Section */
