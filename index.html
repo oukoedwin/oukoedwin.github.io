@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Edwin Ouko</title>
+    <title>Edwin O. Ouko</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>Edwin Ouko</h1>
+        <h1>Edwin O. Ouko</h1>
         <p>Software Engineer | Electrical Engineer | ML Engineer</p>
         <nav>
             <ul>
@@ -23,7 +23,7 @@
     
     <section id="about">
         <h2>About Me</h2>
-        <p>Hi there! I'm a Master's student at MIT in Electrical Engineering and Computer Science, passionate about AI, IoT, and computer systems. Beyond my background in technology, I enjoy thinking about economics of everyday life and public policies. I'm also an avid reader and a huge soccer fan.</p>
+        <p>Hi there!<br /> I'm a Master's student at MIT in Electrical Engineering and Computer Science, passionate about AI, IoT, and computer systems. Beyond my background in technology, I enjoy thinking about economics of everyday life and public policies. I'm also an avid reader and a huge soccer fan.</p>
     </section>
     
     <section id="experience">
@@ -52,15 +52,21 @@
         <ul>
             <li>
                 <h3>Diabetic Retinopathy Detection</h3>
-                <p>Mental Stress Prediction using Behavioral Biomarkers</p>
+                <p>Designed a preprocessing pipeline for retina images from two different sources to be used to train a deep learning model for
+diabetic retinopathy detection. Set up a training environment on a distributed compute cluster and used SLURM to schedule training jobs. Trained and evaluated the performance of a transfer learning model based on InceptionV3 for diabetic retinopathy
+detection.</p>
+            </li>
+            <li>
+                <h3>Mental Stress Level Prediction from Biomarkers</h3>
+                <p>Created a mental stress data-to-image conversion pipeline that enabled the use of explainability techniques used for images
+in interpreting stress data from study subjects. Built a deep learning pipeline to predict the stress level of stress study subjects on a scale of 0 to 10 using data from
+phones and wearables. Used different explainability techniques such as class activation maps and local interpretable model-agnostic explanations
+(LIME) to highlight the areas of each image that were most impactful in the model prediction</p>
             </li>
             <li>
                 <h3>Mental Stress Level Prediction</h3>
-                <p></p>
-            </li>
-            <li>
-                <h3>Mental Stress Level Prediction</h3>
-                <p></p>
+                <p>Implemented a drawing system using two FPGAs communicating through I2C. The system allowed real-time collaboration
+between two drawers, saving sketches to an SD card, and using saved sketches as templates for new sketches.</p>
             </li>
         </ul>
     </section>
