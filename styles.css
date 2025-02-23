@@ -109,10 +109,6 @@ ul ul {
 }
 
 /* REVEAL NESTED LIST ON PARENT CLICK */
-/* ul li:has(ul):hover > ul {
-    display: block;
-} */
-
 ul li {
     background: #f8f8f8;
     padding: 15px;
@@ -121,18 +117,6 @@ ul li {
     border-radius: 5px;
     position: relative;
 }
-
-/* ul li:has(ul)::after {
-    content: " ▼"; 
-    font-size: 0.8rem;
-    color: #666;
-    position: absolute;
-    right: 10px;
-} */
-
-/* ul li:hover::after {
-    content: " ▲"; 
-} */
 
 /* Contact Section */
 #contact p {
