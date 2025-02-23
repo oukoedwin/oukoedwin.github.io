@@ -13,7 +13,7 @@ body {
     background-color: #f4f4f4;
     color: #333;
     line-height: 1.6;
-    padding-top: 70px; /* Prevent content from being hidden under fixed navbar */
+    padding-top: 75px; /* Prevent content from being hidden under fixed navbar */
 }
 
 /* Navigation Bar */
@@ -21,7 +21,7 @@ nav {
     background-color: #222;
     color: white;
     position: fixed;
-    width: 80%;  /* Makes the navbar narrower */
+    width: 90%;  /* Makes the navbar narrower */
     top: 0;
     left: 50%;
     transform: translateX(-50%); /* Centers the navbar */
@@ -44,15 +44,15 @@ nav ul li {
 }
 
 nav ul li a {
-    color: white;
+    color: #00bcd4;
     text-decoration: none;
     font-weight: 500;
     font-size: 0.95rem; /* Slightly smaller font for a compact look */
-    transition: color 0.3s ease-in-out;
+    /* transition: color 0.3s ease-in-out; */
 }
 
 nav ul li a:hover {
-    color: #00bcd4;
+    color: #00bcd4; /* to change to something else */
 }
 
 /* Section Styles */
@@ -89,7 +89,7 @@ h2 {
     text-decoration: none;
     border-radius: 6px;
     font-weight: 500;
-    transition: background 0.3s ease-in-out;
+    /*transition: background 0.3s ease-in-out;*/
 }
 
 .button:hover {
