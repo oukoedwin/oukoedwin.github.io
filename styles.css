@@ -107,8 +107,8 @@ ul {
 }
 
 /* HIDE NESTED LISTS INITIALLY */
-ul ul {
-    display: none;
+ul li ul {
+    display: none; /* Hide sublists by default */
     padding-left: 20px;
 }
 
