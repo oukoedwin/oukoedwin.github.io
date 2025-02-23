@@ -9,6 +9,10 @@
     font-family: 'Poppins', sans-serif;
 }
 
+.subtitle {
+    justify-content: center;
+}
+
 body {
     background-color: #f4f4f4;
     color: #333;
