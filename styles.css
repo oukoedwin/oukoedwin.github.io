@@ -109,7 +109,7 @@ ul ul {
 }
 
 /* REVEAL NESTED LIST ON PARENT CLICK */
-ul li:has(ul):hover > ul {
+/* ul li:has(ul):hover > ul {
     display: block;
 }
 
@@ -119,13 +119,11 @@ ul li {
     border-left: 5px solid #00bcd4;
     margin-bottom: 15px;
     border-radius: 5px;
-    /*cursor: pointer; */
     position: relative;
 }
 
-/* ADD A LITTLE ICON FOR DROPDOWN EFFECT */
 ul li:has(ul)::after {
-    content: " ▼"; /* Downward arrow */
+    content: " ▼"; 
     font-size: 0.8rem;
     color: #666;
     position: absolute;
@@ -133,8 +131,8 @@ ul li:has(ul)::after {
 }
 
 ul li:hover::after {
-    content: " ▲"; /* Upward arrow on hover */
-}
+    content: " ▲"; 
+} */
 
 /* Contact Section */
 #contact p {
