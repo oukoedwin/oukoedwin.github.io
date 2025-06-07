@@ -4,145 +4,239 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Edwin O. Ouko</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Edwin O. Ouko</h1>
-        <p class="subtitle">Software Engineer | Electrical Engineer | ML Engineer</p>
-        <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    
-    <section id="about">
-        <h2>About Me</h2>
-        <p>
-            Hi there!
-            <br /> 
-            I'm <strong>Edwin O. Ouko</strong>, a Kenyan software and machine learning engineer based in Boston, MA. I obtained my MEng and Bachelor's degrees in <strong>Electrical Engineering and Computer Science</strong> from MIT.
-            Some of my current interests include the fields of <strong>Machine Learning, IoT, and computer systems</strong>. 
-            I'm also particularly passionate about <strong>STEM outreach</strong> for students from low-income families. 
-            Beyond technology, I'm interested in everyday economics of technology and public policy surrounding technology. I'm also an avid non-fiction reader and a huge Real Madrid and Manchester United fan.</p>
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="hero-content">
+            <h1>Edwin O. Ouko</h1>
+            <p class="subtitle">Software Engineer | Electrical Engineer | ML Engineer</p>
+            <div class="cta-buttons">
+                <a href="#about" class="btn btn-primary">
+                    <i class="fas fa-user"></i>
+                    Learn More
+                </a>
+                <a href="#contact" class="btn">
+                    <i class="fas fa-envelope"></i>
+                    Get in Touch
+                </a>
+            </div>
+        </div>
     </section>
     
-    <section id="experience">
-        <h2>Experience</h2>
-        <ul>
-            <li>
-                <h3>Software Engineering Intern, Microsoft - Azure Kubernetes Services (2024)</h3>
+    <!-- About Section -->
+    <section id="about" class="animate-on-scroll">
+        <h2><i class="fas fa-user-circle"></i> About Me</h2>
+        <div class="about-content">
+            <div class="profile-image">
+                <i class="fas fa-user"></i>
+            </div>
+            <div class="about-text">
                 <p>
-                    Implemented a Download SDK for downloading releases from Azure blob storage for use in airgapped cloud systems.
+                    Hi there! I'm <strong>Edwin O. Ouko</strong>, a Kenyan software and machine learning engineer based in <strong>Boston, MA</strong>. I obtained my MEng and Bachelor's degrees in <strong>Electrical Engineering and Computer Science</strong> from MIT.
                 </p>
-            </li>
-            <li>
-                <h3>Software Engineering Intern, Microsoft - Azure Kubernetes Services (2023)</h3>
+                <br>
                 <p>
-                    Proof-of-concept implementation of in-place upgrade of OS for nodes in hybrid cloud (AKS) clusters
+                    Some of my current interests include the fields of <strong>Machine Learning, IoT, and computer systems</strong>. 
+                    I'm also particularly passionate about <strong>STEM outreach</strong> for students from low-income families.
                 </p>
-            </li>
-            <li>
-                <h3>Software Engineering Intern, Microsoft - Azure Sphere (2022)</h3>
+                <br>
                 <p>
-                    Worked on setting up access point Wi-Fi mode on Azure Sphere devices 
-                    and allowing seamless switching from AP mode to station mode in zero-config scenario.
+                    Beyond technology, I'm interested in everyday economics of technology and public policy surrounding technology. I'm also an avid non-fiction reader and a huge <strong>Real Madrid</strong> and <strong>Manchester United</strong> fan.
                 </p>
-            </li>
-            <li>
-                <h3>Web Developer, MIT PKG Center (2021-2024)</h3>
-                <p>
-                    Built and maintained a data portal for MIT PKG Center that provided a more usable way to track program participation, evaluate feedback, and compare data across different years.
-                </p>
-            </li>
-        </ul>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Experience Section -->
+    <section id="experience" class="animate-on-scroll">
+        <h2><i class="fas fa-briefcase"></i> Experience</h2>
+        <div class="timeline-item">
+            <h3>
+                <i class="fab fa-microsoft"></i>
+                Software Engineering Intern, <span class="company">Microsoft</span> - Azure Kubernetes Services
+                <span class="year">2024</span>
+            </h3>
+            <p>
+                Implemented a Download SDK for downloading releases from Azure blob storage for use in airgapped cloud systems.
+            </p>
+        </div>
         
+        <div class="timeline-item">
+            <h3>
+                <i class="fab fa-microsoft"></i>
+                Software Engineering Intern, <span class="company">Microsoft</span> - Azure Kubernetes Services
+                <span class="year">2023</span>
+            </h3>
+            <p>
+                Proof-of-concept implementation of in-place upgrade of OS for nodes in hybrid cloud (AKS) clusters.
+            </p>
+        </div>
+        
+        <div class="timeline-item">
+            <h3>
+                <i class="fab fa-microsoft"></i>
+                Software Engineering Intern, <span class="company">Microsoft</span> - Azure Sphere
+                <span class="year">2022</span>
+            </h3>
+            <p>
+                Worked on setting up access point Wi-Fi mode on Azure Sphere devices 
+                and allowing seamless switching from AP mode to station mode in zero-config scenario.
+            </p>
+        </div>
+        
+        <div class="timeline-item">
+            <h3>
+                <i class="fas fa-university"></i>
+                Web Developer, <span class="company">MIT PKG Center</span>
+                <span class="year">2021-2024</span>
+            </h3>
+            <p>
+                Built and maintained a data portal for MIT PKG Center that provided a more usable way to track program participation, evaluate feedback, and compare data across different years.
+            </p>
+        </div>
     </section>
     
-    <section id="projects">
-        <h2>Projects</h2>
-        <ul>
-            <li>
-                <h3>Diabetic Retinopathy Detection in Low Resolution Retinal Images for Low Resource Environments</h3>
-                <p>
-                    Designed a preprocessing pipeline for retina images from two different sources to be used to train a deep learning model for
-                    diabetic retinopathy detection. Set up a training environment on a distributed compute cluster and used SLURM to schedule training jobs. Trained and evaluated the performance of a transfer learning model based on InceptionV3 for diabetic retinopathy
-                    detection.
-                </p>
-            </li>
-            <li>
-                <h3>Mental Stress Level Prediction from Mobile Phone Biomarkers</h3>
-                <p>Created a mental stress data-to-image conversion pipeline that enabled the use of explainability techniques used for images
-                    in interpreting stress data from study subjects. Built a deep learning pipeline to predict the stress level of stress study subjects on a scale of 0 to 10 using data from
-                    phones and wearables. Used different explainability techniques such as class activation maps and local interpretable model-agnostic explanations
-                    (LIME) to highlight the areas of each image that were most impactful in the model prediction
-                </p>
-            </li>
-            <li>
-                <h3><a href="https://drive.google.com/file/d/1j2aAc58sf6wkakhakOX759X3LEFlsngJ/view?usp=sharing">DigiSketch: A Collaborative Drawing System using FPGAs</a></h3>
-                <p>
-                    Implemented a drawing system using two FPGAs communicating through I2C. The system allowed real-time collaboration
-                    between two drawers, allowing one to save sketches to permanent memory, and/or use saved sketches as templates for new sketches.
-                </p>
-            </li>
-        </ul>
+    <!-- Projects Section -->
+    <section id="projects" class="animate-on-scroll">
+        <h2><i class="fas fa-code"></i> Projects</h2>
+        <div class="timeline-item">
+            <h3>
+                <i class="fas fa-eye"></i>
+                Diabetic Retinopathy Detection in Low Resolution Retinal Images for Low Resource Environments
+            </h3>
+            <p>
+                Designed a preprocessing pipeline for retina images from two different sources to be used to train a deep learning model for
+                diabetic retinopathy detection. Set up a training environment on a distributed compute cluster and used SLURM to schedule training jobs. Trained and evaluated the performance of a transfer learning model based on InceptionV3 for diabetic retinopathy detection.
+            </p>
+        </div>
+        
+        <div class="timeline-item">
+            <h3>
+                <i class="fas fa-brain"></i>
+                Mental Stress Level Prediction from Mobile Phone Biomarkers
+            </h3>
+            <p>
+                Created a mental stress data-to-image conversion pipeline that enabled the use of explainability techniques used for images
+                in interpreting stress data from study subjects. Built a deep learning pipeline to predict the stress level of stress study subjects on a scale of 0 to 10 using data from
+                phones and wearables. Used different explainability techniques such as class activation maps and local interpretable model-agnostic explanations
+                (LIME) to highlight the areas of each image that were most impactful in the model prediction.
+            </p>
+        </div>
+        
+        <div class="timeline-item">
+            <h3>
+                <i class="fas fa-microchip"></i>
+                <a href="https://drive.google.com/file/d/1j2aAc58sf6wkakhakOX759X3LEFlsngJ/view?usp=sharing" style="color: inherit;">DigiSketch: A Collaborative Drawing System using FPGAs</a>
+            </h3>
+            <p>
+                Implemented a drawing system using two FPGAs communicating through I2C. The system allowed real-time collaboration
+                between two drawers, allowing one to save sketches to permanent memory, and/or use saved sketches as templates for new sketches.
+            </p>
+        </div>
     </section>
     
-    <section id="skills">
-        <h2>Skills and Tools</h2>
-        <ul>
-            <li class="toggleable">
-                Machine Learning
-                <ul>
-                    <li>Feature Engineering</li>
-                    <li>Time Series Analysis</li>
-                    <li>Graph Theory</li>
-                    <li>NLP</li>
-                    <li>Deep Learning</li>
-                    <li>Reinforcement Learning</li>
-                    <li>Classical Machine Learning Techniques (Regression, Clustering etc.); Supervised and Unsupervised</li>
-                    <li>Pytorch</li>
-                    <li>TensorFlow</li>
-                </ul>
-            </li>
-            <li class="toggleable">
-                Web Development
-                <ul>
-                    <li>React</li>
-                    <li>Flask</li>
-                    <li>Node.js</li>
-                    <li>Web Assembly</li>
-                </ul>
-            </li>
+    <!-- Skills Section -->
+    <section id="skills" class="animate-on-scroll">
+        <h2><i class="fas fa-cogs"></i> Skills and Tools</h2>
+        <div class="skills-grid">
+            <div class="skill-category" onclick="toggleSkills(this)">
+                <h3>
+                    <div class="icon"><i class="fas fa-robot"></i></div>
+                    Machine Learning
+                </h3>
+                <div class="skill-list">
+                    <div class="skill-tag">Feature Engineering</div>
+                    <div class="skill-tag">Time Series Analysis</div>
+                    <div class="skill-tag">Graph Theory</div>
+                    <div class="skill-tag">NLP</div>
+                    <div class="skill-tag">Deep Learning</div>
+                    <div class="skill-tag">Reinforcement Learning</div>
+                    <div class="skill-tag">Classical ML</div>
+                    <div class="skill-tag">PyTorch</div>
+                    <div class="skill-tag">TensorFlow</div>
+                </div>
+            </div>
             
-            <li class="toggleable">
-                Programming Languages
-                <ul>
-                    <li>Python</li>
-                    <li>C/C++</li>
-                    <li>JavaScript/TypeScript</li>
-                    <li>Go</li>
-                </ul>
-            </li>
-            <li>iOS Development</li>
-            <li>Kubernetes</li>
-            <li>Networking</li>
-            <li>Linux</li>
-            <li>Git</li>
-        </ul>
+            <div class="skill-category" onclick="toggleSkills(this)">
+                <h3>
+                    <div class="icon"><i class="fas fa-globe"></i></div>
+                    Web Development
+                </h3>
+                <div class="skill-list">
+                    <div class="skill-tag">React</div>
+                    <div class="skill-tag">Flask</div>
+                    <div class="skill-tag">Node.js</div>
+                    <div class="skill-tag">WebAssembly</div>
+                </div>
+            </div>
+            
+            <div class="skill-category" onclick="toggleSkills(this)">
+                <h3>
+                    <div class="icon"><i class="fas fa-code"></i></div>
+                    Programming Languages
+                </h3>
+                <div class="skill-list">
+                    <div class="skill-tag">Python</div>
+                    <div class="skill-tag">C/C++</div>
+                    <div class="skill-tag">JavaScript/TypeScript</div>
+                    <div class="skill-tag">Go</div>
+                </div>
+            </div>
+            
+            <div class="skill-category">
+                <h3>
+                    <div class="icon"><i class="fas fa-tools"></i></div>
+                    Other Technologies
+                </h3>
+                <div class="skill-list show">
+                    <div class="skill-tag">iOS Development</div>
+                    <div class="skill-tag">Kubernetes</div>
+                    <div class="skill-tag">Networking</div>
+                    <div class="skill-tag">Linux</div>
+                    <div class="skill-tag">Git</div>
+                </div>
+            </div>
+        </div>
     </section>
     
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Email: <a href="mailto:edwinouko4@gmail.com">[firstname][lastname]4@gmail.com</a></p>
-        <p><a href="https://github.com/oukoedwin">GitHub</a> | <a href="https://www.linkedin.com/in/edwin-o-ouko-6bb103189/">LinkedIn</a></p>
+    <!-- Contact Section -->
+    <section id="contact" class="animate-on-scroll">
+        <h2><i class="fas fa-envelope"></i> Contact</h2>
+        <div class="contact-content">
+            <p style="font-size: 1.2rem; margin-bottom: 2rem;">Let's connect and discuss opportunities!</p>
+            <div class="contact-links">
+                <a href="mailto:edwinouko4@gmail.com" class="contact-link">
+                    <i class="fas fa-envelope"></i>
+                    edwinouko4@gmail.com
+                </a>
+                <a href="https://github.com/oukoedwin" class="contact-link" target="_blank">
+                    <i class="fab fa-github"></i>
+                    GitHub
+                </a>
+                <a href="https://www.linkedin.com/in/edwin-o-ouko-6bb103189/" class="contact-link" target="_blank">
+                    <i class="fab fa-linkedin"></i>
+                    LinkedIn
+                </a>
+            </div>
+        </div>
     </section>
     
+    <!-- Footer -->
     <footer>
         <p>&copy; 2025 Edwin O. Ouko. All rights reserved.</p>
     </footer>
