@@ -1,6 +1,4 @@
-# Edwin O. Ouko Portfolio
-
-Single-page portfolio, focused on software engineering, machine learning research, and collaboration-oriented project work.
+# Edwin's Personal Website
 
 ## What This Site Highlights
 
