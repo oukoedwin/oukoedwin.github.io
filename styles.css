@@ -307,6 +307,16 @@ h2::after {
     font-weight: 500;
 }
 
+.project-bullets {
+    margin: 0.75rem 0 0;
+    padding-left: 1.2rem;
+    color: var(--text-light);
+}
+
+.project-bullets li {
+    margin-bottom: 0.5rem;
+}
+
 .project-label {
     display: inline-block;
     margin-right: 0.5rem;
