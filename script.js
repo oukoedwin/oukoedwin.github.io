@@ -30,9 +30,16 @@ animateOnScroll(); // Run on load
 
 // Skills toggle functionality
 function toggleSkills(element) {
-    const skillList = element.querySelector('.skill-list');
-    if (skillList) {
-        skillList.classList.toggle('show');
+    const skillCategory = element.closest('.skill-category');
+    if (!skillCategory) {
+        return;
+    }
+
+    const skillList = skillCategory.querySelector('.skill-list');
+    const isOpen = skillList && skillList.classList.toggle('show');
+
+    if (isOpen !== undefined) {
+        element.setAttribute('aria-expanded', String(isOpen));
     }
 }
 
@@ -50,6 +57,13 @@ window.addEventListener('scroll', () => {
 
 // Initialize first animation
 document.addEventListener('DOMContentLoaded', () => {
+    document.querySelectorAll('.skill-toggle').forEach(toggle => {
+        const category = toggle.closest('.skill-category');
+        const skillList = category.querySelector('.skill-list');
+        const isOpen = skillList ? skillList.classList.contains('show') : false;
+        toggle.setAttribute('aria-expanded', String(isOpen));
+    });
+
     setTimeout(() => {
         animateOnScroll();
     }, 100);
