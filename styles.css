@@ -495,6 +495,27 @@ nav ul li a:focus-visible {
     transform: translateY(-2px);
 }
 
+.contact-email {
+    cursor: default;
+    opacity: 0.9;
+}
+
+.contact-email:hover {
+    transform: none;
+}
+
+.email-text {
+    font-family: 'Courier New', monospace;
+    font-size: 0.95em;
+    letter-spacing: 0.5px;
+}
+
+.email-symbol {
+    font-weight: bold;
+    margin: 0 3px;
+    color: var(--primary-color);
+}
+
 /* Footer */
 footer {
     background: var(--dark-bg);
