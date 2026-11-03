@@ -7,7 +7,8 @@
     --rule: #dcd8cf;
     --accent: #b3431b;
     --accent-ink: #ffffff;
-    --contour: rgba(179, 67, 27, 0.22);
+    --motif: rgba(179, 67, 27, 0.4);
+    /* Backup contour motif color: --motif: rgba(179, 67, 27, 0.22); */
     --serif: 'Fraunces', Georgia, 'Times New Roman', serif;
     --sans: 'IBM Plex Sans', system-ui, -apple-system, 'Segoe UI', sans-serif;
     --mono: 'IBM Plex Mono', ui-monospace, Menlo, Consolas, monospace;
@@ -26,7 +27,8 @@
         --rule: #2e2f33;
         --accent: #f0915a;
         --accent-ink: #121315;
-        --contour: rgba(240, 145, 90, 0.18);
+        --motif: rgba(240, 145, 90, 0.32);
+        /* Backup contour motif color: --motif: rgba(240, 145, 90, 0.18); */
     }
 }
 
@@ -171,9 +173,14 @@ p {
     content: '';
     position: absolute;
     inset: 0;
-    background-color: var(--contour);
+    background-color: var(--motif);
+    -webkit-mask: url('images/signal-noise.svg') right center / cover no-repeat;
+    mask: url('images/signal-noise.svg') right center / cover no-repeat;
+    /* Backup contour motif: swap these in for the two lines above, use the
+       backup --motif colors, and drop the mobile mask-position override.
     -webkit-mask: url('images/contours.svg') right center / cover no-repeat;
     mask: url('images/contours.svg') right center / cover no-repeat;
+    */
     pointer-events: none;
 }
 
@@ -511,6 +518,7 @@ p {
 
 .about img {
     width: 100%;
+    height: auto;
     aspect-ratio: 1;
     object-fit: cover;
     border-radius: 6px;
@@ -598,6 +606,12 @@ p {
 
     .site-nav {
         width: 100%;
+    }
+
+    /* Show where the grid starts breaking up, not just the noisy end */
+    .hero::before {
+        -webkit-mask-position: 45% center;
+        mask-position: 45% center;
     }
 
     .site-nav ul {
